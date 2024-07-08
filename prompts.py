@@ -37,8 +37,7 @@ EXPLICAÇÃO: "A passagem descreve questões relacionadas à gestão de jardins 
 PONTUAÇÃO: "0"
 """
 
-sabia_chave = """
-Dada uma CONSULTA e uma PASSAGEM de texto, você deve fornecer uma PONTUAÇÃO 0 ou 1 com os seguintes significados:
+sabia_chave = """Dada uma CONSULTA e uma PASSAGEM de texto, você deve fornecer uma PONTUAÇÃO 0 ou 1 com os seguintes significados:
 1 = Relevante: a PASSAGEM é relevante à CONSULTA, pois responde parcial ou totalmente à CONSULTA.
 0 = Irrelevante: a PASSAGEM não tem nada a ver com a CONSULTA.
 Procedimento: Leia a CONSULTA. Depois leia a PASSAGEM e verifique se dentro dela existem trechos que podem responder à CONSULTA. Se existir alguma resposta à CONSULTA, mesmo que parcial, atribua PONTUAÇÃO 1. Se a PASSAGEM não tiver nenhuma relação com a CONSULTA, atribua a PONTUAÇÃO 0.
@@ -56,8 +55,7 @@ EXPLICAÇÃO: "Apesar da passagem ser sobre os Jardins Botânicos de Kew, não m
 """
 
 
-sabia_llm4evalPT = """
-Dada uma CONSULTA e uma PASSAGEM de texto, você deve fornecer uma PONTUAÇÃO em uma escala inteira de 0 a 3 com os seguintes significados:
+sabia_llm4evalPT = """Dada uma CONSULTA e uma PASSAGEM de texto, você deve fornecer uma PONTUAÇÃO em uma escala inteira de 0 a 3 com os seguintes significados:
 3 = Perfeitamente relevante: a PASSAGEM responde totalmente à CONSULTA.
 2 = Altamente relevante: a PASSAGEM contém alguma resposta para a CONSULTA, mas a resposta é parcial ou incompleta.
 1 = Relacionado: a PASSAGEM parece relacionada à CONSULTA, mas não inclui nenhuma resposta à mesma.
